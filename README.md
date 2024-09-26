@@ -27,3 +27,6 @@ To install the extension you do:
 
 	python setup.py install
 
+Disclaimer
+=========
+This code is very minimalistic and it is designed purely for illustration and educational purposes. The author is takes no responsibility resulting from its use.
