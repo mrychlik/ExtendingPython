@@ -30,7 +30,14 @@ ctypes_2d_arrays_check: ctypes_2d_array.py libbar.so
 	$(PYTHON) ctypes_2d_array.py
 
 
+# Pure C driver. Good for Python-free development cycle
+OBJS = main.o
+main: $(OBJS)
+	$(CC) $(CFLAGS) $(OBJS) -o $@ $(LDFLAGS)
+
+
 clean: FORCE
 	-rm *.so
+	-rm *.o
 
 FORCE:
