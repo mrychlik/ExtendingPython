@@ -36,6 +36,9 @@ OBJS = main.o
 main: $(OBJS) libbar.so
 	$(CC) $(CFLAGS) $(OBJS) -o $@ $(LDFLAGS)
 
+# Run the driver. Since we dynamically link, we
+# must set the environment variable LD_LIBRARY_PATH to the folder
+# where libbar.so exists
 run: main
 	LD_LIBRARY_PATH=. ./main
 
