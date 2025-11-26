@@ -38,7 +38,7 @@ main: $(OBJS) libbar.so
 
 # Run the driver. Since we dynamically link, we
 # must set the environment variable LD_LIBRARY_PATH to the folder
-# where libbar.so exists
+# where libbar.so exists, e.g., current directory
 run: main
 	LD_LIBRARY_PATH=. ./main
 
