@@ -1,5 +1,6 @@
 CFLAGS=-std=c99
 PYTHON=python
+LDFLAGS = -L. -lbar
 
 all: libbar.so
 
@@ -32,12 +33,14 @@ ctypes_2d_arrays_check: ctypes_2d_array.py libbar.so
 
 # Pure C driver. Good for Python-free development cycle
 OBJS = main.o
-main: $(OBJS)
+main: $(OBJS) libbar.so
 	$(CC) $(CFLAGS) $(OBJS) -o $@ $(LDFLAGS)
+
+run: main
+	LD_LIBRARY_PATH=. ./main
 
 
 clean: FORCE
-	-rm *.so
-	-rm *.o
+	-rm *.so *.o
 
 FORCE:
