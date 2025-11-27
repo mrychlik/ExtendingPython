@@ -6,7 +6,7 @@ LDFLAGS = -L. -lbar
 all: libbar.so main
 
 libbar.so: bar.c
-	gcc -shared -o $@ -fPIC bar.c
+	$(CC) -shared -o $@ -fPIC bar.c
 
 check: add_check pass_array_check modify_array_check \
 	ctypes_1d_arrays_check ctypes_2d_arrays_check
