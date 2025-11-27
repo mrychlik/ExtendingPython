@@ -45,6 +45,6 @@ run: main
 
 
 clean: FORCE
-	-rm *.so *.o
+	-rm *.so *.o main
 
 FORCE:
