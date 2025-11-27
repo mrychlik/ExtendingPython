@@ -7,7 +7,8 @@
 * Copying:  (C) Marek Rychlik, 2020. All rights reserved.
 *
 *----------------------------------------------------------------*/
-/* The implementation of functions to be called from Python */
+/* The implementation of functions to be called from Python, and
+ * from the driver code. */
 #include <stdio.h>
 
 
