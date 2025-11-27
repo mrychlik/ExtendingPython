@@ -9,8 +9,8 @@
 *----------------------------------------------------------------*/
 /* The implementation of functions to be called from Python, and
  * from the driver code. */
-#include <stdio.h>
 
+#include <stdio.h>
 
 int bar_add(int x, int y)
 {
