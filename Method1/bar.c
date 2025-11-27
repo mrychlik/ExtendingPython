@@ -1,4 +1,13 @@
-// foo.c
+/*----------------------------------------------------------------
+* File:     bar.c
+*----------------------------------------------------------------
+*
+* Author:   Marek Rychlik (rychlik@arizona.edu)
+* Date:     Wed Nov 26 17:12:38 2025
+* Copying:  (C) Marek Rychlik, 2020. All rights reserved.
+*
+*----------------------------------------------------------------*/
+/* The implementation of functions to be called from Python */
 #include <stdio.h>
 
 
